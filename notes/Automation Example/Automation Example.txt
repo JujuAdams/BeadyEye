@@ -1,0 +1,28 @@
+[
+    function(_beadyEye)         //Tell other objects that a cutscene has started
+    {                           //
+        global.cutscene = true; //
+    },                          //
+    
+    ["MoveTo", oSecret.x, oSecret.y, 1, acEase], //Move the camera to the secret
+    ["ZoomTo", 2, 1, acEase],                    //Zoom in too
+    1,                                           //Wait for 1 second
+    
+    function(_beadyEye)             //Tell the secret it has been opened
+    {                               //
+        oSecret.open = true;        //
+    },                              //
+    ["ShakeAxis", 0, -10, 10, 1.5], //Shake the screen
+    2,                              //Wait for 2 seconds
+    
+    [audio_play_sound, sndSecretRevealed, 0, false], //Play some audio
+    0.4,                                             //Wait for 0.4 seconds
+    
+    ["MoveTo", oPlayer.x, oPlayer.y, 1, acEase], //Move the camera back to the player
+    1,                                           //Wait for 1 second
+    
+    function(_beadyEye)          //Tell other objects that a cutscene has finished
+    {                            //
+        global.cutscene = false; //
+    },                           //
+]

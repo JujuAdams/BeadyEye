@@ -1,0 +1,17 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Beady Eye","order":2,"path":"folders/Beady Eye.yy",},
+    {"name":"(System)","order":6,"path":"folders/Beady Eye/(System).yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"acEase","order":4,"path":"animcurves/acEase/acEase.yy",},
+    {"name":"acHit","order":5,"path":"animcurves/acHit/acHit.yy",},
+    {"name":"Automation Example","order":5,"path":"notes/Automation Example/Automation Example.yy",},
+    {"name":"oTest","order":3,"path":"objects/oTest/oTest.yy",},
+    {"name":"__BeadyConstants","order":1,"path":"scripts/__BeadyConstants/__BeadyConstants.yy",},
+    {"name":"BeadyEyeCreate","order":2,"path":"scripts/BeadyEyeCreate/BeadyEyeCreate.yy",},
+    {"name":"BeadyEyeCreateFromView","order":4,"path":"scripts/BeadyEyeCreateFromView/BeadyEyeCreateFromView.yy",},
+    {"name":"BeadyEyeCreateOnView","order":3,"path":"scripts/BeadyEyeCreateOnView/BeadyEyeCreateOnView.yy",},
+    {"name":"sBackground","order":1,"path":"sprites/sBackground/sBackground.yy",},
+  ],
+}

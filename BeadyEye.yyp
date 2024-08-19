@@ -1,0 +1,46 @@
+{
+  "$GMProject":"",
+  "%Name":"BeadyEye",
+  "AudioGroups":[
+    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+  ],
+  "configs":{
+    "children":[],
+    "name":"Default",
+  },
+  "defaultScriptType":1,
+  "Folders":[
+    {"$GMFolder":"","%Name":"Beady Eye","folderPath":"folders/Beady Eye.yy","name":"Beady Eye","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"(System)","folderPath":"folders/Beady Eye/(System).yy","name":"(System)","resourceType":"GMFolder","resourceVersion":"2.0",},
+  ],
+  "IncludedFiles":[],
+  "isEcma":false,
+  "LibraryEmitters":[],
+  "MetaData":{
+    "IDEVersion":"2024.6.2.162",
+  },
+  "name":"BeadyEye",
+  "resources":[
+    {"id":{"name":"acEase","path":"animcurves/acEase/acEase.yy",},},
+    {"id":{"name":"acHit","path":"animcurves/acHit/acHit.yy",},},
+    {"id":{"name":"Automation Example","path":"notes/Automation Example/Automation Example.yy",},},
+    {"id":{"name":"oTest","path":"objects/oTest/oTest.yy",},},
+    {"id":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
+    {"id":{"name":"__BeadyConfig","path":"scripts/__BeadyConfig/__BeadyConfig.yy",},},
+    {"id":{"name":"__BeadyConstants","path":"scripts/__BeadyConstants/__BeadyConstants.yy",},},
+    {"id":{"name":"__BeadyEyeClass","path":"scripts/__BeadyEyeClass/__BeadyEyeClass.yy",},},
+    {"id":{"name":"BeadyEyeCreate","path":"scripts/BeadyEyeCreate/BeadyEyeCreate.yy",},},
+    {"id":{"name":"BeadyEyeCreateFromView","path":"scripts/BeadyEyeCreateFromView/BeadyEyeCreateFromView.yy",},},
+    {"id":{"name":"BeadyEyeCreateOnView","path":"scripts/BeadyEyeCreateOnView/BeadyEyeCreateOnView.yy",},},
+    {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},},
+  ],
+  "resourceType":"GMProject",
+  "resourceVersion":"2.0",
+  "RoomOrderNodes":[
+    {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
+  ],
+  "templateType":"game",
+  "TextureGroups":[
+    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+  ],
+}
