@@ -1,5 +1,16 @@
 // Feather disable all
 
+/// Create a BeadyEye struct and a GameMaker camera for it. The x/y position defines the centre
+/// of the camera's point of view. The width and height defines the size of the camera's
+/// point-of-view in room space. The camera is then applied to the target view (by default, view 0)
+/// which overwrites whatever camera has already been set for that view.
+/// 
+/// N.B. You must call the `.Destroy()` method on the returned BeadyEye struct when you're done
+///      using it or you will create a memory leak.
+/// 
+/// The retured BeadyEye struct can be controlled and manipulated using methods on the struct. For
+/// a list of methods, please see `BeadyEyeCreate()`.
+/// 
 /// @param x
 /// @param y
 /// @param width

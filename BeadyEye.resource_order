@@ -10,8 +10,8 @@
     {"name":"oTest","order":3,"path":"objects/oTest/oTest.yy",},
     {"name":"__BeadyConstants","order":1,"path":"scripts/__BeadyConstants/__BeadyConstants.yy",},
     {"name":"BeadyEyeCreate","order":2,"path":"scripts/BeadyEyeCreate/BeadyEyeCreate.yy",},
-    {"name":"BeadyEyeCreateFromView","order":4,"path":"scripts/BeadyEyeCreateFromView/BeadyEyeCreateFromView.yy",},
     {"name":"BeadyEyeCreateOnView","order":3,"path":"scripts/BeadyEyeCreateOnView/BeadyEyeCreateOnView.yy",},
+    {"name":"BeadyEyeCreateUsingView","order":4,"path":"scripts/BeadyEyeCreateUsingView/BeadyEyeCreateUsingView.yy",},
     {"name":"sBackground","order":1,"path":"sprites/sBackground/sBackground.yy",},
   ],
 }

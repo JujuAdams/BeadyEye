@@ -194,11 +194,11 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
         time_source_destroy(__timeSource);
     }
     
-    ////////////////////
-    //                //
-    //                //
-    //                //
-    ////////////////////
+    //////////////
+    //          //
+    //  Basics  //
+    //          //
+    //////////////
     
     __pause = false;
     
@@ -216,7 +216,7 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
         return __cameraIntegerPosition;
     }
     
-    SetSize = function(_width, _height)
+    SetBaseSize = function(_width, _height)
     {
         __width  = _width;
         __height = _height;
@@ -271,11 +271,11 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
         return self;
     }
     
-    ////////////////
-    //            //
-    // Automation //
-    //            //
-    ////////////////
+    //////////////////
+    //              //
+    //  Automation  //
+    //              //
+    //////////////////
     
     __automation      = undefined;
     __automationIndex = 0;
@@ -364,11 +364,11 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
         }
     }
     
-    //////////
-    //      //
-    // Move //
-    //      //
-    //////////
+    ////////////
+    //        //
+    //  Move  //
+    //        //
+    ////////////
     
     __tweenMoveDo        = false;
     __tweenMoveCurve     = undefined;
@@ -449,11 +449,11 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
         return __tweenMoveDo;
     }
     
-    //////////
-    //      //
-    // Zoom //
-    //      //
-    //////////
+    ////////////
+    //        //
+    //  Zoom  //
+    //        //
+    ////////////
     
     __zoom = 1;
     
@@ -518,11 +518,11 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
         return __tweenZoomDo;
     }
     
-    ///////////
-    //       //
-    // Angle //
-    //       //
-    ///////////
+    /////////////
+    //         //
+    //  Angle  //
+    //         //
+    /////////////
     
     __tweenAngleDo        = false;
     __tweenAngleCurve     = undefined;
@@ -564,11 +564,11 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
         return __tweenAngleDo;
     }
     
-    ////////////////////
-    //                //
-    // Camera Getters //
-    //                //
-    ////////////////////
+    //////////////////////
+    //                  //
+    //  Camera Getters  //
+    //                  //
+    //////////////////////
     
     GetCamera = function()
     {
@@ -625,11 +625,11 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
         return point_distance(GetCameraCenterX(), GetCameraCenterY(), _x, _y);
     }
     
-    ///////////////
-    //           //
-    // Knockback //
-    //           //
-    ///////////////
+    /////////////////
+    //             //
+    //  Knockback  //
+    //             //
+    /////////////////
     
     __knockbackState     = 0; //0 = idle, 1 = knocked, 2 = recover
     __knockbackX         = 0;
@@ -683,11 +683,11 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
         return (__knockbackState != 0);
     }
     
-    /////////////
-    //         //
-    // Shaking //
-    //         //
-    /////////////
+    ///////////////
+    //           //
+    //  Shaking  //
+    //           //
+    ///////////////
     
     __shakeState     = 0; //0 = idle, 1 = circle, 2 = axis, 3 = rectangle
     __shakeX         = 0;
@@ -749,11 +749,11 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
         return (__shakeState != 0);
     }
     
-    /////////////
-    //         //
-    // Private //
-    //         //
-    /////////////
+    ///////////////
+    //           //
+    //  Private  //
+    //           //
+    ///////////////
     
     __Update = function()
     {

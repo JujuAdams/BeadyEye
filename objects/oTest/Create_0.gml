@@ -1,4 +1,4 @@
 // Feather disable all
 
-beadyEye = BeadyEyeCreateFromView();
+beadyEye = BeadyEyeCreateUsingView();
 beadyEye.KnockbackParams(100, 0.3, acEase);

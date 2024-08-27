@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"BeadyEyeCreateFromView",
+  "%Name":"BeadyEyeCreateUsingView",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"BeadyEyeCreateFromView",
+  "name":"BeadyEyeCreateUsingView",
   "parent":{
     "name":"Beady Eye",
     "path":"folders/Beady Eye.yy",
