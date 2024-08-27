@@ -95,7 +95,7 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
             if (__shakeState == 1)
             {
                 var _angle        = BEADY_RANDOM_FUNCTION(360);
-                var _displacement = BEADY_RANDOM_FUNCTION(__shakeMagnitude);
+                var _displacement = BEADY_RANDOM_FUNCTION(__shakeDistance);
                 __shakeX = lengthdir_x(_displacement, _angle);
                 __shakeY = lengthdir_y(_displacement, _angle);
                 
@@ -655,7 +655,7 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
         return self;
     }
     
-    Knockback = function(_direction, _magnitude, _duration = BEADY_DEFAULT_KNOCKBACK_DURATION, _curve = BEADY_DEFAULT_KNOCKBACK_CURVE)
+    Knockback = function(_direction, _distance, _duration = BEADY_DEFAULT_KNOCKBACK_DURATION, _curve = BEADY_DEFAULT_KNOCKBACK_CURVE)
     {
         if (__automationBlock & BEADY_BLOCK_KNOCKBACK) return;
         
@@ -665,8 +665,8 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
         __knockbackStartX    = __knockbackX;
         __knockbackStartY    = __knockbackY;
         __knockbackDuration  = 1000*_duration;
-        __knockbackEndX      = __knockbackX + lengthdir_x(_magnitude, _direction);
-        __knockbackEndY      = __knockbackY + lengthdir_y(_magnitude, _direction);
+        __knockbackEndX      = __knockbackX + lengthdir_x(_distance, _direction);
+        __knockbackEndY      = __knockbackY + lengthdir_y(_distance, _direction);
         
         var _inverseDistance = min(1, __knockbackMaxDistance / sqrt(__knockbackEndX*__knockbackEndX + __knockbackEndY*__knockbackEndY));
         if (not is_nan(_inverseDistance) && not is_infinity(_inverseDistance))
@@ -692,7 +692,7 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
     __shakeState     = 0; //0 = idle, 1 = circle, 2 = axis, 3 = rectangle
     __shakeX         = 0;
     __shakeY         = 0;
-    __shakeMagnitude = undefined;
+    __shakeDistance = undefined;
     __shakeStartTime = undefined;
     __shakeDuration  = undefined;
     __shakeCurve     = undefined;
@@ -702,12 +702,12 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
     __shakeWidth     = undefined;
     __shakeHeight    = undefined;
     
-    ShakeCircle = function(_magnitude, _duration = BEADY_DEFAULT_SHAKE_DURATION, _curve = BEADY_DEFAULT_SHAKE_CURVE)
+    ShakeCircle = function(_distance, _duration = BEADY_DEFAULT_SHAKE_DURATION, _curve = BEADY_DEFAULT_SHAKE_CURVE)
     {
         if (__automationBlock & BEADY_BLOCK_SHAKE) return;
         
         __shakeState     = 1;
-        __shakeMagnitude = _magnitude
+        __shakeDistance = _distance;
         __shakeStartTime = __time;
         __shakeDuration  = 1000*_duration;
         __shakeCurve     = _curve;
@@ -763,7 +763,7 @@ function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
         }
         else
         {
-            camera_set_view_pos(__camera, floor(__x + __shakeX + __knockbackX - 0.5*__width/__zoom), floor(__y + __shakeY + __knockbackY - 0.5*__height/__zoom));
+            camera_set_view_pos(__camera, (__x + __shakeX + __knockbackX - 0.5*__width/__zoom), (__y + __shakeY + __knockbackY - 0.5*__height/__zoom));
         }
         
         camera_set_view_size(__camera, __width/__zoom, __height/__zoom);
