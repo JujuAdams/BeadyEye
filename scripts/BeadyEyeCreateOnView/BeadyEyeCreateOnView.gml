@@ -15,9 +15,9 @@
 /// @param y
 /// @param width
 /// @param height
-/// @param [viewIndex=0]
+/// @param viewIndex
 
-function BeadyEyeCreateOnView(_x, _y, _width, _height, _viewIndex = 0)
+function BeadyEyeCreateOnView(_x, _y, _width, _height, _viewIndex)
 {
     var _camera = camera_create();
     camera_set_view_pos(_camera, _x - _width/2, _y - _height/2);

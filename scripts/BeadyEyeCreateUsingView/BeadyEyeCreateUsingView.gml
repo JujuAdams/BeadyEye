@@ -8,9 +8,9 @@
 /// The retured BeadyEye struct can be controlled and manipulated using methods on the struct. For
 /// a list of methods, please see `BeadyEyeCreate()`.
 /// 
-/// @param [viewIndex=0]
+/// @param viewIndex
 
-function BeadyEyeCreateUsingView(_viewIndex = 0)
+function BeadyEyeCreateUsingView(_viewIndex)
 {
     return new __BeadyEyeClass(view_get_camera(_viewIndex), false);
 }
