@@ -3,6 +3,12 @@
 /// @param camera
 /// @param cleanUpCamera
 
+
+
+show_debug_message($"Welcome to BeadyEye by Juju Adams! This is version {BEADY_VERSION}, {BEADY_DATE}");
+
+
+
 function __BeadyEyeClass(_camera, _cleanUpCamera) constructor
 {
     __camera        = _camera;
